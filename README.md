@@ -10,14 +10,15 @@ Implementation/Further improvements
 
 Sample Example request:
 
-```
-curl -i -X POST \
--H "Content-Type:application/json" \
-   -d \
+``` 
+Request -  'http://localhost:8080/v1/accounts/transfer'
+
+POST
+"Content-Type:application/json" 
+ 
 '{
   "accountFrom":"uid-1",
   "accountTo":"uid-2",
   "transferAmount": "5500.80"
-}' \
- 'http://localhost:8080/v1/accounts/transfer'
+}' 
 ```
